@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Telecom.kz Maven MobApp" />
+        <module name="telecom" />
       </profile>
     </annotationProcessing>
   </component>
