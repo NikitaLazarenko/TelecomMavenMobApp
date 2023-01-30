@@ -1,19 +1,12 @@
 package pages;
 
-import static com.codeborne.selenide.Selenide.*;
-import static driver.EmulatorHelper.androidScrollToAnElementByText;
-import static driver.EmulatorHelper.goBack;
-
-import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
-
-import java.util.List;
-
 import io.appium.java_client.MobileBy;
 import io.qameta.allure.Step;
+
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class AuthorizationMP extends SearchPage{
     public void CheckBody(){
@@ -21,7 +14,7 @@ public class AuthorizationMP extends SearchPage{
     }
 
     //Локаторы к каждому элементу:
-    public SelenideElement closePopUpButton = $(MobileBy.id("kz.telecom.app:id/ic_close"));
+    public SelenideElement closePopUpButton = $(MobileBy.id("kz.telecom.app:id/icOOO_close"));
     public SelenideElement LoginButtonMainPage = $(MobileBy.id("kz.telecom.app:id/tv_login"));
     public SelenideElement PhoneField = $(MobileBy.id("kz.telecom.app:id/et_phone_number"));
     public SelenideElement ContinueButtonAuth = $(MobileBy.className("android.widget.TextView"));
